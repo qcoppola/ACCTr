@@ -1,11 +1,17 @@
 ######
-
+install.packages("tidyverse")
 library(tidyverse)
+install.packages("stringr")
 library(stringr)
+install.packages("fs")
 library(fs)
+install.packages("purrr")
 library(purrr)
+install.packagees("gsubfn")
 library(gsubfn)
+install.packages("readr")
 library(readr)
+install.packages("data.table")
 library(data.table)
 
 #NOTE AVG RT WILL ONLY WORK FOR FULL ACCT DATA SETS BASED ON 24 TRAINING DAYS WITHOUT ANY DIRECTED TRAINING
@@ -489,4 +495,4 @@ dfALL <- data.frame(subjects,
               dfWM,
               dfTS)
 
-write.csv(dfALL,"/Users/quentincoppola/Desktop/ENTER_FILENAME_HERE.csv", row.names = FALSE)
+write.csv(dfALL,"~/Desktop/ENTER_FILENAME_HERE.csv", row.names = FALSE)
